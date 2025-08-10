@@ -1,41 +1,51 @@
+# 🩺 HealthMate - Smart Health Companion Website
 
-# 💊 HealthMate – AI-Based Personal Health Assistant
+HealthMate is a full-stack health management web application that allows users to register, log in, and track their health logs, view dashboards, and connect with doctors. It’s built using **HTML, CSS, JavaScript, PHP, MySQL**, and styled with **Bootstrap 5** and **custom JavaScript/CSS**.
 
-**HealthMate** is a full-stack web application that provides personal health assistance using AI-like logic and ML integration. It includes features like symptom checking, health log tracking with charts, email verification, and doctor locator—all with a modern Bootstrap UI.
+## 🚀 Features
+
+- ✅ User registration with **email verification**
+- 🔒 Secure login using **hashed passwords**
+- 📝 Health log form (symptoms, heart rate, mood)
+- 📊 Dashboard with **interactive charts** using Chart.js
+- 👨‍⚕️ Find Doctors / Doctor Locator section
+- 🖼️ Stylish homepage with **animated UI & navigation**
+- 🔐 Form validation using JavaScript
+- 📦 Modular file structure with reusable components
 
 ---
 
-## 🔥 Features
+## 📂 Folder Structure
 
-- ✅ User Registration with Email Confirmation (PHPMailer)
-- 🔐 Secure Login System
-- 📊 Health Tracking Dashboard with Chart.js
-- 🧠 AI Symptom Checker (Stubbed ML API Integration)
-- 📍 Find Nearby Doctors using Google Maps API *(optional)*
-- 🎨 Stylish Responsive UI with Bootstrap 5
-
----
-
-## 📁 Folder Structure
-
-```
+```bash
 HealthMate/
-├── css/                  # Custom stylesheets
-├── js/                   # JS scripts
-├── includes/             # PHP reusable components
-├── email_confirmation/   # Email verification logic
-├── health_log_chart.php  # Chart.js health visualizations
-├── ml_api_predict.php    # ML API integration
-├── register.php          # User registration
-├── login.php             # User login
-├── dashboard.php         # User dashboard
-├── symptom_checker.php   # Symptom prediction
-├── logout.php            # End session
-├── index.html            # Landing page (Bootstrap)
-└── database.sql          # MySQL database schema
-```
+│
+├── index.html                 # Public landing page
+├── login.php                  # Login form
+├── register.php               # Register form
+├── dashboard.php              # Main dashboard
+├── health_log.php             # Health logging feature
+├── doctor_locator.php         # Find nearby doctors (static/mock)
+│
+├── includes/
+│   ├── navbar.php             # Common navigation bar
+│   ├── footer.php             # Common footer
+│   └── db_connect.php         # DB connection file
+│
+├── css/
+│   └── style.css              # Custom styles
+│
+├── js/
+│   └── validation.js          # JS form validation (optional)
+│
+├── register_backend.php       # PHP registration backend
+├── login_backend.php          # PHP login backend
+├── verify.php                 # Email verification script
+├── assets/                    # Images, fonts, icons, etc.
+│
+└── database/
+    └── healthmate.sql         # SQL for creating DB and tables
 
----
 
 ## 🧰 Technologies Used
 
